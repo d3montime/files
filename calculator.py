@@ -21,3 +21,4 @@ while integer != 'done' :
 
     # prints in this code used to determine what part of the loop was not working as intended/skipped
     # also note that while True leads to a infinite loop. Could have used this conditional in this case
+    #hi
