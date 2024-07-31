@@ -1,3 +1,2 @@
-str = 'X-DSPAM-Confidence: 0.8475'
-pos = str.find(':')
-print(float(str[pos+1:]))
+str = 'good morning what are you doing right now 762 basketball banana'
+print(str.strip('ogmdna'))
