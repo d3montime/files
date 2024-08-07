@@ -1,4 +1,4 @@
-words = dict()
+list = dict()
 try:
     file = input('Enter File Name: ')
     hndl = open(file)
@@ -7,10 +7,10 @@ except:
     quit()
 for line in hndl :
     if line.startswith('From') :
-        list = line.split()
-        if len(list) > 3 :
-            list = list[2]
-            words[list] = words.get(list, 0)+1
+        words = line.split()
+        if len(words) > 3 :
+            word = words[2]
+            list[word] = list.get(word, 0)+1
 
 
-print(words)
+print(list)
