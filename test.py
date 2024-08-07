@@ -1,9 +1,3 @@
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-
-x = car["model"]
-
+x = {'funny': 2, 'troll': 5, 'almen': 10, 'david' : 11}
 print(x)
+print(sorted([(k,v) for v, k in x.items()]))
