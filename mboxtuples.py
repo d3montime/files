@@ -10,9 +10,7 @@ for line in content :
     if len(words) > 3 and words[0] == 'From' :
         sender[words[1]] = sender.get(words[1], 0) + 1
 slist = sorted([(v,k) for k,v in sender.items()], reverse= True)
-print(slist)
-for v,k in slist[0] :
-    print(k,v)
-
+for count, email in slist[:1]:
+    print(email, count)
 
 
